@@ -22,7 +22,7 @@ This application uses a token-based authentication system. The flow is as follow
    - The JWT is securely stored on the client side, typically in the browser's local storage or a secure HTTP cookie.
 
 4. **Authenticated Requests**:
-   - For every subsequent request to protected routes (e.g., accessing user-specific to-do lists), the client includes the JWT in the request headers.
+   - For every subsequent request to protected routes , the client includes the JWT in the request headers.
 
 5. **Server Authentication**:
    - The server verifies the JWT to ensure it's valid, has not expired, and matches a user in the database.
@@ -36,10 +36,10 @@ This application uses a token-based authentication system. The flow is as follow
 ## Additional Security Measures
 
 1. **Password Hashing**:
-   - User passwords are hashed using a strong cryptographic hashing algorithm (e.g., bcrypt) before being stored in the database. This ensures that even if the database is compromised, the passwords remain secure.
+   - User passwords are hashed using a strong cryptographic hashing algorithm before being stored in the database. This ensures that even if the database is compromised, the passwords remain secure.
 
 2. **JWT Expiry**:
-   - Tokens have a limited lifespan and expire after a certain period (e.g., 15 minutes). This reduces the risk associated with stolen tokens.
+   - Tokens have a limited lifespan and expire after a certain period . This reduces the risk associated with stolen tokens.
 
 3. **HTTPS**:
    - The application is served over HTTPS to encrypt data in transit and protect against man-in-the-middle attacks.
